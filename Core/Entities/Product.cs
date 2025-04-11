@@ -1,10 +1,11 @@
 ﻿using Core.Interfaces;
+using Core.VOs;
 
 namespace Core.Entities
 {
     public class Product: BaseEntity, IAuditApproval
     {
-        public required string Name { get; set; }
+        public required ProductName Name { get; set; }
         public string? Description { get; set; }
         public required string SkuCode { get; set; }
         public string Customfield { get; set; } = string.Empty;

@@ -1,4 +1,5 @@
 ﻿using Core.Interfaces;
+using Core.VOs;
 
 namespace Core.Entities
 {
@@ -6,12 +7,12 @@ namespace Core.Entities
     {
         public string UserName { get; set; }
         public string NormalizedUserName { get; set; }
-        public string Email { get; set; }
+        public Email Email { get; set; }
         public string NormalizedEmail { get; set; }
         public string PasswordHash { get; set; }
         public string SecurityStamp { get; set; }
         public string? ConcurrencyStamp { get; set; } = string.Empty;
-        public string? PhoneNumber { get; set; } = string.Empty;
+        public Phone? PhoneNumber { get; set; }
         public bool? PhoneNumberConfirmed { get; set; } = false;
         public bool? TwoFactorEnabled { get; set; } = false;
         public bool IsActive { get; set; } = true;

@@ -1,4 +1,5 @@
 ﻿using Core.Interfaces;
+using Core.VOs;
 using System.Runtime.InteropServices;
 
 namespace Core.Entities
@@ -8,7 +9,7 @@ namespace Core.Entities
         public string Name { get; set; }
         public string? Description { get; set; }
         public string? Email { get; set; }
-        public string? Phone { get; set; }
+        public Phone? Phone { get; set; }
         public string? Address { get; set; }
         public string CUIT { get; set; }
         public string? ContactPerson { get; set; }

@@ -4,7 +4,7 @@ namespace Core.Entities
 {
     public class Account: BaseEntity, IAuditApproval
     {
-        public string name { get; set; }
+        public string Name { get; set; }
         public string Value { get; set; }
         public string? Description { get; set; }
         
